@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(to bottom, #000000, #0a0f2c);
+    color: white;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background: black;
+}
+
+h1 {
+    color: #00d9ff;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Lists */
+ul {
+    list-style: square;
+}
+
+/* 🌌 Black Hole Animation */
+.black-hole {
+    width: 300px;
+    height: 300px;
+    margin: 30px auto;
+    border-radius: 50%;
+
+    background: radial-gradient(circle at center,
+        black 30%,
+        #2b1055 45%,
+        #7597de 60%,
+        transparent 70%
+    );
+
+    box-shadow:
+        0 0 20px #00d9ff,
+        0 0 40px #00d9ff,
+        0 0 80px #0044ff;
+
+    animation: spin 10s linear infinite, pulse 3s ease-in-out infinite;
+}
+
+/* دوران */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* نبض */
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+/* Video */
+iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    padding: 10px;
+    background: #00d9ff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #0099cc;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: black;
+}
